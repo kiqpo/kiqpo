@@ -22,19 +22,19 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-##### Installation
+##### Installation 📥
 
 
 ```console:
 $ pip install bionic.web
 ```
 
-##### Crafting new projct 
+##### Crafting new projct 👷
 
 ```console:
 $ Bionic.py create hello_world
 ```
-happy codeing ❤️ 
+happy coding ❤️ 
 
 
 
