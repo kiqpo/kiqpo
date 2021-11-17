@@ -1,0 +1,14 @@
+#button {
+  margin: 1px;
+  background: #2c9bff;
+  border: 0px solid #556699;
+  border-radius: 5px;
+  padding: 1.5% 6%;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 1rem/1 "Open Sans", sans-serif;
+  text-align: center;
+  min-width: 10%;
+  width: 20%;
+  outline: none;
+}

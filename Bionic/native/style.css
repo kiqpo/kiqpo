@@ -1,0 +1,11 @@
+body > h1{
+    margin: 10%;
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.btn{
+    position: relative;
+    margin-left: 10% !important;
+}
