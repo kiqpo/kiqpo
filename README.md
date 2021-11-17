@@ -52,7 +52,7 @@ happy coding ❤️
 
 
 
-### code 
+### Code example
 
 
 ```python:
