@@ -25,13 +25,13 @@ To get a local copy up and running follow these simple example steps.
 ##### Installation 📥
 
 
-```js:
+```shell:
 $ pip install bionic.web
 ```
 
 ##### Crafting new projct 👷
 
-```js:
+```shell:
 $ Bionic.py create hello_world
 ```
 
@@ -39,13 +39,12 @@ $ Bionic.py create hello_world
 
 ##### Running & Testing 👷
 
-```console:
+```shell:
 $ cd Bionic
 $ bionic.py
 ```
 
 
-happy coding ❤️ 
 
 
 
@@ -64,6 +63,7 @@ def RunApp():
         Text("hello"),
         Button(Text="btn", OnTap=Alert("hello")),
     ),
+RunApp()
 ```
 
 
@@ -83,6 +83,8 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+happy coding ❤️ 
 
 
 
