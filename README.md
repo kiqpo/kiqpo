@@ -25,13 +25,13 @@ To get a local copy up and running follow these simple example steps.
 ##### Installation 📥
 
 
-```js:
+```shell:
 $ pip install bionic.web
 ```
 
 ##### Crafting new projct 👷
 
-```js:
+```shell:
 $ Bionic.py create hello_world
 ```
 
@@ -39,7 +39,7 @@ $ Bionic.py create hello_world
 
 ##### Running & Testing 👷
 
-```console:
+```shell:
 $ cd Bionic
 $ bionic.py
 ```
