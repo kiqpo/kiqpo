@@ -63,6 +63,7 @@ def RunApp():
         Text("hello"),
         Button(Text="btn", OnTap=Alert("hello")),
     ),
+RunApp()
 ```
 
 
