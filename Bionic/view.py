@@ -1,5 +1,6 @@
 
-from core.JsActivities import alert
+from core.jsLib import alert
+from core.lib.bottomNav import bottomNav
 from core import Head
 from core import core
 from core import Button
@@ -16,6 +17,7 @@ Head = core.head
 Button = Button.Button
 Text = Text.Text
 Div = Div.Div
+BottomNav = bottomNav.bottomNav
 TextStyle = TextStyle.TextStyle
 Img = Img.img
 Builder = Builder.Builder

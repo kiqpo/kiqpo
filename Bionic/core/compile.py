@@ -4,7 +4,7 @@ def HTMLFile(Head, Body):
 <head>
     {Head}
 </head>
-<body style='font-family: Arial, Helvetica, sans-serif;'>
+<body>
     {Body}
 </body>
 </html>
