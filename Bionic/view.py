@@ -1,5 +1,6 @@
 
 from core.jsLib import alert
+from core.jsLib import popUp
 from core.lib.bottomNav import bottomNav
 from core import Head
 from core import core
@@ -22,6 +23,7 @@ TextStyle = TextStyle.TextStyle
 Img = Img.img
 Builder = Builder.Builder
 Body = core.body
+PopUp = popUp.popUp
 Alert = alert.alert
 State = State.State
 GetState = GetState.GetState

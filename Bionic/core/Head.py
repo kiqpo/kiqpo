@@ -11,7 +11,7 @@ def HeadCore(Title="Bionic-Ui", Css=True, Style="./style.css", ThemeColor="#1e90
     <meta property="og:url" content="{SiteUrl}" />
     <meta property="og:description" content="{Image_description}" />
     <meta property="og:image" itemprop="image" content="{Imageurl}" />
-    <meta property="og:type" content="{type}"/>
+    <meta property="og:type" content="{Type}"/>
     <link href="{Style}" rel="stylesheet" />
     <link href="./core.css" rel="stylesheet" />
     <link href="./frame.css" rel="stylesheet" />

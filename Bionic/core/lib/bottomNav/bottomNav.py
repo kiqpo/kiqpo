@@ -27,7 +27,4 @@ def bottomNav(labelText="Bionic", backgroundColor="#2c9bff", height="57px", labe
   margin-top: 10px;
   font-size: {labelFontSize};
   font-family: Arial, Helvetica, sans-serif;">{labelText}</h2>
-      <!-- <img style="width: 3rem;
-  margin-top: 7px;
-  margin-left: 5%;" src="./src/icon.png" alt="bard-logo"> -->
 </div>"""

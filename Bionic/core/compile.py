@@ -7,6 +7,7 @@ def HTMLFile(Head, Body):
 <body>
     {Body}
 </body>
+  <script src="./core.js"></script>
 </html>
     """
 

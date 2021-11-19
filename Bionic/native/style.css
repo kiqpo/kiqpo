@@ -1,11 +1,69 @@
-body > h1{
-    margin: 10%;
-    font-size: 4rem;
-    font-weight: 900;
-    color: rgba(0, 0, 0, 0.719);
+.Welcome-text {
+  margin-left: 5% !important;
+  font-size: 2.4rem !important;
+  font-weight: 500;
+  margin-top: 5% !important;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  color: rgba(0, 0, 0, 0.685);
 }
 
-.btn{
+body {
+  overflow: hidden;
+}
+
+.iMac {
+  position: relative;
+  margin-top: 10%;
+  width: 60%;
+}
+
+.info-text {
+  position: absolute;
+  top: 20%;
+  margin-left: 5% !important;
+  color: rgba(0, 0, 0, 0.432);
+}
+
+.iPhone {
+  position: absolute;
+  width: 20%;
+  top: 40%;
+  left: 65%;
+}
+
+.iPad {
+  position: absolute;
+  width: 30%;
+  top: 60%;
+  left: 80%;
+}
+
+.Processor {
+  position: absolute;
+  width: 5%;
+  top: 60%;
+  left: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  .Welcome-text {
     position: relative;
-    margin-left: 10% !important;
+    margin-top: 5% !important;
+    font-weight: 900 !important;
+    font-size: 2.2rem !important;
+    color: rgba(0, 0, 0, 0.685);
+  }
+  .info-text {
+    position: absolute;
+    top: 22%;
+    margin-left: 5% !important;
+    color: rgba(0, 0, 0, 0.432);
+  }
+  .iMac {
+    position: relative;
+    margin-top: 17%;
+    width: 80%;
+  }
 }
