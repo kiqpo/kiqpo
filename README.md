@@ -26,13 +26,13 @@ To get a local copy up and running follow these simple example steps.
 
 
 ```shell:
-$ pip install bionic.web
+pip install bionic.admin
 ```
 
 ##### Crafting new projct 👷
 
 ```shell:
-$ Bionic.py create hello_world
+Bionic.py create hello_world
 ```
 
 
@@ -40,8 +40,8 @@ $ Bionic.py create hello_world
 ##### Running & Testing 👷
 
 ```shell:
-$ cd Bionic
-$ bionic.py
+cd Bionic
+bionic.py
 ```
 
 
