@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 ```shell:
-pip install bionic.admin
+pip install bionic.control
 ```
 
 ##### Crafting new projct 👷
