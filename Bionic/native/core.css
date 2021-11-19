@@ -1,0 +1,168 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#button {
+  margin: 1px;
+  background: #2c9bff;
+  border: 0px solid #556699;
+  border-radius: 5px;
+  padding: 1.5% 6%;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 1rem/1 "Open Sans", sans-serif;
+  text-align: center;
+  min-width: 10%;
+  width: 20%;
+  outline: none;
+}
+
+#bottom-Nav {
+  position: absolute;
+  width: 100vw;
+  height: 57px;
+  background: #2c9bff;
+  box-shadow: rgba(50, 50, 93, 0.151) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.233) 0px 8px 16px -8px;
+}
+
+
+#bottom-Nav-bard{
+  margin-left: 5%;
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#bottom-Nav-bard-logo{
+  width: 3rem;
+  margin-top: 7px;
+  margin-left: 5%;
+}
+
+
+
+
+/* pop up */
+
+
+
+
+.Bionic-pop {
+  position: absolute;
+  min-width: 55%;
+  height: 180px;
+  width: 60%;
+  max-width: 500px;
+  background: rgb(255, 255, 255);
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* box-shadow: rgba(17, 17, 26, 0.048) 0px 8px 24px,
+    rgba(17, 17, 26, 0.021) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+  z-index: 100000000000;
+  border-radius: 7px;
+  animation-name: Bionic-pop;
+  animation-duration: 140ms;
+}
+
+.Bionic-pop > h1 {
+  font-size: 1.5rem;
+  margin: 5%;
+  font-weight: 600;
+}
+
+@keyframes Bionic-pop {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Bionic-backdrop {
+  position: absolute;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.295);
+  height: 100%;
+  top: 0px;
+  animation-name: Bionic-backdrop;
+  animation-duration: 200ms;
+  backdrop-filter: blur(1px);
+}
+
+.Bionic-pop-btn{
+  background:dodgerblue;
+  position: relative;
+  color: #fff;
+  left: 70%;
+  width: 23%;
+  border-radius: 6px;
+  padding: 1.1%;
+  font-weight: 700;
+  outline: none;
+}
+
+
+.Bionic-pop-info{
+  position: relative;
+  bottom: 25%;
+  left: 5%;
+  width: 60%;
+  color: rgba(0, 0, 0, 0.685);
+  font-size: 1.1rem;
+  text-align: left;
+}
+@keyframes Bionic-backdrop {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Bionic-pop {
+    width: 65%;
+    min-height: 350px;
+    border-radius: 30px;
+  }
+  .Bionic-backdrop {
+    background: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(0.5px);
+  }
+  .Bionic-pop > h1 {
+    position: relative;
+    width: 85%;
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.76);
+    top: 38%;
+  }
+
+  .Bionic-pop-btn{
+    transform: translate(-50%);
+    left: 50%;
+    padding: 3%;
+    border-radius: 25px;
+    width: 60%;
+    margin-top: 85%;
+    outline: none;
+  }
+  .Bionic-pop-info{
+    position: relative;
+    bottom: 35%;
+    margin-bottom: 10%;
+    width: 90%;
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+}
