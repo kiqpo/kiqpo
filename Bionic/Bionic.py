@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 import sys
-import shutil
 import os
-import Bionic
 import requests
 import zipfile
 
@@ -27,10 +25,10 @@ def CORE():
     def create(projct_name="Bionic"):
         url = 'https://api.github.com/repos/bionic-py/Bionic/releases'
 
-        res = requests.get(url, allow_redirects=True)
+        res = requests.get(url,allow_redirects=True)
         res_json = res.json()
 
-        ZipFileUrl = (res_json[0]["zipball_url"])
+        ZipFileUrl = res_json[0]["zipball_url"]
 
         ZipFileData = requests.get(ZipFileUrl, allow_redirects=True)
 

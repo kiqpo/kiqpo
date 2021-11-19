@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="bionic.web",
+    name="bionic.control",
     version="1.0.1",
     author="shajin-sha",
     author_email="shajin.sha10@gmail.com",
@@ -21,13 +21,8 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-<<<<<<< HEAD
-    packages=["Bionic","Bionic/core"],
+    packages=["Bionic", "Bionic/core"],
     scripts=["Bionic/Bionic.py"],
-=======
-    packages=["src","src/core","src/core/TextStyle"],
-    scripts=["src/Bionic.py"],
->>>>>>> 367e8a3e69f5a523d47b538adc112fd8bdcba619
     python_requires=">=3.6",
 
 )
