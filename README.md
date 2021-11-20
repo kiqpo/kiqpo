@@ -1,6 +1,6 @@
 
  
-> Bionic is Python Framework for crafting beautiful, fast user experiences for web and is free and open source.
+> Bionic is a Python Framework for crafting beautiful, fast user experiences for web and is free and open source. (FOREVER)
 
 
 
