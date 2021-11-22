@@ -88,6 +88,7 @@ body{
 .Bionic-backdrop {
   position: absolute;
   width: 100vw;
+  left: 0px;
   background: rgba(0, 0, 0, 0.295);
   height: 100%;
   top: 0px;
@@ -106,6 +107,7 @@ body{
   padding: 1.1%;
   font-weight: 700;
   outline: none;
+  border: none;
 }
 
 

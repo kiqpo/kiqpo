@@ -1,4 +1,4 @@
-def HeadCore(Title="Bionic-Ui", Css=True, Style="./style.css", ThemeColor="#1e90ff", SiteUrl="www.hey.com", Image_description="this is an image description", Imageurl="", Type="", Keywords="", Description="", Author="", Icon="./src/icon.ico"):
+def HeadCore(Title="Bionic-Ui", Css=True, Style="./style.css", ThemeColor="#1e90ff", SiteUrl="www.hey.com", Image_description="this is an image description", Imageurl="", Type="Landing-page", Keywords="", Description="", Author="", Icon="./src/icon.ico"):
     if Css == True:
         return f"""<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

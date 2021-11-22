@@ -1,4 +1,4 @@
-def bottomNav(labelText="Bionic", backgroundColor="#2c9bff", height="57px", labelFontSize="1.7rem", icon=False, iconPath="./src/icon.png"):
+def topNav(labelText="Bionic", backgroundColor="#2c9bff", height="57px", labelFontSize="1.7rem", icon=False, iconPath="./src/icon.png"):
     if icon == True:
         return f"""<div style="
   position: absolute;
