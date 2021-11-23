@@ -13,6 +13,7 @@ from core import Img
 from core import State
 from core import GetState
 from core import ReadJS
+from core import SetState
 
 
 Head = core.head
@@ -26,6 +27,7 @@ Builder = Builder.Builder
 Body = core.body
 PopUp = popUp.popUp
 Alert = alert.alert
+SetState = SetState.SetState
 State = State.State
 ReadJS = ReadJS.ReadJS
 GetState = GetState.GetState

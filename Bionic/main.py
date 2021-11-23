@@ -4,8 +4,8 @@ from view import *
 def RunApp():
     Head(),
     Body(
-        Text('hello',Id='myText'),
-        Button(text='text', onTap=(
-            ReadJS('/button.js')
+        Text(Text=0, Id='Number'),
+        Button(text='+', onTap=(
+            Alert("hey")
         )),
-    ),
+    )
