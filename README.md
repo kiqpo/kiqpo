@@ -35,7 +35,7 @@ bionic.py
 
 
 
-### default page
+### This is how the default page looks like:-
 <img src='https://i.ibb.co/b5dwzHM/Screenshot-from-2021-11-20-00-35-45.png' />
 
 
@@ -52,6 +52,7 @@ def RunApp():
         Text("hello"),
         Button(Text="btn", OnTap=Alert("hello")),
     ),
+RunApp()
 ```
 
 <!-- CONTRIBUTING -->
