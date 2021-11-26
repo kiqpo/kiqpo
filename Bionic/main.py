@@ -6,6 +6,7 @@ def RunApp():
     Body(
         Text(Text=0, Id='Number'),
         Button(text='+', onTap=(
-            Alert("hey")
+            Alert("Hi there 👋, thanks for trying out Bionic. Team of Bionic wish you a very happy web development.")
         )),
     )
+RunApp()
