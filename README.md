@@ -51,8 +51,7 @@ def RunApp():
     Body(
         Text("hello"),
         Button(Text="btn", OnTap=Alert("hello")),
-    ),
-RunApp()
+    )
 ```
 
 <!-- CONTRIBUTING -->
