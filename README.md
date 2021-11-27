@@ -35,13 +35,13 @@ bionic.py
 
 
 
-### This is how the default page looks like ✨:-
+##### This is how the default page looks like ✨:-
 <img src='https://i.ibb.co/b5dwzHM/Screenshot-from-2021-11-20-00-35-45.png' />
 
 
 
 
-### Code example ⚡
+##### Code example ⚡
 
 ```python:
 from view import *
@@ -55,7 +55,7 @@ def RunApp():
 ```
 
 <!-- CONTRIBUTING -->
-### Contributing 🤝
+##### Contributing 🤝
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
