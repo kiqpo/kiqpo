@@ -3,7 +3,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bionic-py/Bionic)
 ![Lines of code](https://img.shields.io/tokei/lines/github/bionic-py/Bionic)
 ![GitHub](https://img.shields.io/github/license/bionic-py/Bionic)
-![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2021/bionic-py/Bionic)
+<!--[GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2021/bionic-py/Bionic)-->
 ![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/title/bionic-py/Bionic/1)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bionic.control?logo=python&logoColor=white)
 [![Gitter](https://badges.gitter.im/Bionic-community/community.svg)](https://gitter.im/Bionic-community/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
