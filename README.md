@@ -36,19 +36,19 @@
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-##### Installation 📥
+#### Installation 📥
 
 ```shell:
 pip install bionic.control
 ```
 
-##### Crafting new projct 👷
+#### Crafting new projct 👷
 
 ```shell:
 Bionic.py create hello_world
 ```
 
-##### Running & Testing ⚗️
+#### Running & Testing ⚗️
 
 ```shell:
 cd Bionic
@@ -58,15 +58,15 @@ bionic.py
 
 
 
-##### This is how the default page looks like ✨:-
+#### This is how the default page looks like ✨:-
 <img width="75%" src='https://i.ibb.co/b5dwzHM/Screenshot-from-2021-11-20-00-35-45.png' />
 
 
 
 
-##### Code example ⚡
+#### Code example ⚡
 
-```python:
+```python
 from view import *
 
 def RunApp():
@@ -78,7 +78,7 @@ def RunApp():
 ```
 
 <!-- CONTRIBUTING -->
-##### Contributing 🤝
+#### Contributing 🤝
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
