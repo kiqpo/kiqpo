@@ -1,7 +1,29 @@
 
+
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bionic-py/Bionic)
+![Lines of code](https://img.shields.io/tokei/lines/github/bionic-py/Bionic)
+![GitHub](https://img.shields.io/github/license/bionic-py/Bionic)
+![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2021/bionic-py/Bionic)
+![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/title/bionic-py/Bionic/1)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bionic.control?logo=python&logoColor=white)
+
+
+
+<!-- <img src="https://repository-images.githubusercontent.com/426888760/64d87104-0e32-4373-b2a9-0ce078153db9" /> -->
+
+
+
+
+
+<p align="center">
+  <img width='85%' src="https://repository-images.githubusercontent.com/426888760/64d87104-0e32-4373-b2a9-0ce078153db9" />
+</p>
+
+
+
 > Bionic is Python Framework for crafting beautiful, fast user experiences for web and is free and open source.
 
-### Fast results 🚀
+### Fast 🚀
 
  Bionic is fast. It's powered core python without any extra dependencies.
  Bionic offers stateful hot reload, allowing you to make changes to your code and see the results instantly without restarting your app or losing its state.
@@ -36,7 +58,7 @@ bionic.py
 
 
 ##### This is how the default page looks like ✨:-
-<img src='https://i.ibb.co/b5dwzHM/Screenshot-from-2021-11-20-00-35-45.png' />
+<img width="75%" src='https://i.ibb.co/b5dwzHM/Screenshot-from-2021-11-20-00-35-45.png' />
 
 
 
