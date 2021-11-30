@@ -6,6 +6,7 @@
 ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2021/bionic-py/Bionic)
 ![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/title/bionic-py/Bionic/1)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bionic.control?logo=python&logoColor=white)
+[![Gitter](https://badges.gitter.im/Bionic-community/community.svg)](https://gitter.im/Bionic-community/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
 
