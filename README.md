@@ -6,17 +6,28 @@
 
 <h3>kiqpo<h3>
 
-<img src="https://img.shields.io/badge/contributions-welcome-green?&logo=github">
+<img src="https://img.shields.io/badge/contributions-welcome-green?&logo=github">‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎<img src="https://img.shields.io/website?url=https://kiqpo.github.io/kiqpo-dco/&logo=icon"></img>
 
-<img src="https://img.shields.io/website?url=https://kiqpo.github.io/kiqpo-dco/&logo=icon"></img>
+<b>
+    <p>Open open source WEB-UI framework</p>
+</b>
 
-<b><p>Open open source WEB-UI framework</p></b>
+  <p>
+    <sub>
+      Built with ❤︎ by
+      <a href="https://github.com/kiqpo/kiqpo/graphs/contributors">
+        contributors
+      </a>
+    </sub>
+  </p>
 
 </div>
 
-### Fast 🚀
+### kiqpo
 
-Bionic is fast. It's powered core python without any extra dependencies.
+> Python Framework for crafting beautiful, fast WEB-UI
+
+kiqpo is fast. It's powered core python without any extra dependencies.
 Bionic offers stateful hot reload, allowing you to make changes to your code and see the results instantly without restarting your app or losing its state.
 
 ### Getting Started
@@ -44,10 +55,6 @@ Bionic.py create hello_world
 cd Bionic
 bionic.py
 ```
-
-#### This is how the default page looks like ✨:-
-
-<img width="75%" src='https://i.ibb.co/b5dwzHM/Screenshot-from-2021-11-20-00-35-45.png' />
 
 #### Code example ⚡
 
