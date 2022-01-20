@@ -1,12 +1,12 @@
 <div align="center">
 <a href="https://kiqpo.github.io/kiqpo-dco/" ></a>
-<img width="15%" src="https://i.ibb.co/zVHfMDW/rounded-corners.png" />
+<img width="16%" src="https://i.ibb.co/zVHfMDW/rounded-corners.png" />
 
 <br/>
 
 <h3>kiqpo<h3>
 
-<img src="https://img.shields.io/badge/contributions-welcome-green?&logo=github">‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎<img src="https://img.shields.io/website?url=https://kiqpo.github.io/kiqpo-dco/&logo=icon"></img>
+<img src="https://img.shields.io/badge/contributions-welcome-green?&logo=github">‏‎ ‎<img src="https://img.shields.io/website?url=https://kiqpo.github.io/kiqpo-dco/&logo=icon"></img>
 
 <b>
 <sub>
