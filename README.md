@@ -9,7 +9,9 @@
 <img src="https://img.shields.io/badge/contributions-welcome-green?&logo=github">‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎<img src="https://img.shields.io/website?url=https://kiqpo.github.io/kiqpo-dco/&logo=icon"></img>
 
 <b>
+<sub>
     <p>Open open source WEB-UI framework</p>
+</sub>
 </b>
 
   <p>
