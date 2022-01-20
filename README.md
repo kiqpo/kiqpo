@@ -34,7 +34,7 @@ Bionic offers stateful hot reload, allowing you to make changes to your code and
 
 ### Getting Started
 
-<a href="https://bionic-py.github.io/Bionic-Documentation/">documentation 📖 </a>
+<a href="https://kiqpo.github.io/kiqpo-dco//">documentation 📖 </a>
 </br>
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
