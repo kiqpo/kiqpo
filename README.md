@@ -6,7 +6,7 @@
 
 <h3>kiqpo<h3>
 
-<img src="https://img.shields.io/badge/contributions-welcome-green?&logo=github">‏‎ ‎<img src="https://img.shields.io/website?url=https://kiqpo.github.io/kiqpo-dco/&logo=icon"></img>
+<img src="https://img.shields.io/badge/contributions-welcome-greenl?&logo=github">‏‎ ‎<img src="https://img.shields.io/badge/website-up-greenl"></img>
 
 <b>
 <sub>
@@ -25,9 +25,14 @@
 
 </div>
 
-### kiqpo
 
-> Python Framework for crafting beautiful, fast WEB-UI
+<div align="center">
+<img src="https://i.ibb.co/3TcpRH0/rounded-corners-1.png" >
+</br>
+</br>
+</br>
+</div>
+
 
 kiqpo is fast. It's powered core python without any extra dependencies.
 Bionic offers stateful hot reload, allowing you to make changes to your code and see the results instantly without restarting your app or losing its state.
@@ -87,3 +92,4 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 happy coding ❤️
+

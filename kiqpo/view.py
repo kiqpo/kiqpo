@@ -16,6 +16,7 @@ from core import ReadJS
 from core import SetState
 from core.Flex import Flex,FlexOptions
 from core.TextFelid import TextFelid
+from core import Link
 from core import ThisValue
 from core import GetValue
 
@@ -24,6 +25,7 @@ from core import GetValue
 Head = core.head
 Button = Button.Button
 Text = Text.Text
+Link = Link.Link
 Div = Div.Div
 TopNav = topNav.topNav
 TextStyle = TextStyle.TextStyle
