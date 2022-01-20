@@ -2,7 +2,7 @@
 import sys
 import shutil
 import os
-import Bionic
+import kiqpo
 import requests
 import zipfile
 

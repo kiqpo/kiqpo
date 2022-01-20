@@ -1,49 +1,66 @@
+<div align="center">
+<a href="https://kiqpo.github.io/kiqpo-dco/" ></a>
+<img width="16%" src="https://i.ibb.co/zVHfMDW/rounded-corners.png" />
 
-> Bionic is Python Framework for crafting beautiful, fast user experiences for web and is free and open source.
+<br/>
 
-### Fast results 🚀
+<h3>kiqpo<h3>
 
- Bionic is fast. It's powered core python without any extra dependencies.
- Bionic offers stateful hot reload, allowing you to make changes to your code and see the results instantly without restarting your app or losing its state.
+<img src="https://img.shields.io/badge/contributions-welcome-green?&logo=github">‏‎ ‎<img src="https://img.shields.io/website?url=https://kiqpo.github.io/kiqpo-dco/&logo=icon"></img>
+
+<b>
+<sub>
+    <p>Open open source WEB-UI framework</p>
+</sub>
+</b>
+
+  <p>
+    <sub>
+      Built with ❤︎ by
+      <a href="https://github.com/kiqpo/kiqpo/graphs/contributors">
+        contributors
+      </a>
+    </sub>
+  </p>
+
+</div>
+
+### kiqpo
+
+> Python Framework for crafting beautiful, fast WEB-UI
+
+kiqpo is fast. It's powered core python without any extra dependencies.
+Bionic offers stateful hot reload, allowing you to make changes to your code and see the results instantly without restarting your app or losing its state.
 
 ### Getting Started
 
-<a href="https://bionic-py.github.io/Bionic-Documentation/">documentation  📖 <a/>
- </br>
+<a href="https://kiqpo.github.io/kiqpo-dco//">documentation 📖 </a>
+</br>
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-##### Installation 📥
+#### Installation 📥
 
 ```shell:
 pip install bionic.control
 ```
 
-##### Crafting new projct 👷
+#### Crafting new projct 👷
 
 ```shell:
 Bionic.py create hello_world
 ```
 
-##### Running & Testing 👷
+#### Running & Testing ⚗️
 
 ```shell:
 cd Bionic
 bionic.py
 ```
 
+#### Code example ⚡
 
-
-
-### default page
-<img src='https://i.ibb.co/b5dwzHM/Screenshot-from-2021-11-20-00-35-45.png' />
-
-
-
-
-### Code example
-
-```python:
+```python
 from view import *
 
 def RunApp():
@@ -51,11 +68,12 @@ def RunApp():
     Body(
         Text("hello"),
         Button(Text="btn", OnTap=Alert("hello")),
-    ),
+    )
 ```
 
 <!-- CONTRIBUTING -->
-### Contributing 👷🏼‍♂️
+
+#### Contributing 🤝
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
