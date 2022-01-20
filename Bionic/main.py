@@ -4,8 +4,6 @@ from view import *
 def RunApp():
     Head(),
     Body(
-        Text(Text=0, Id='Number'),
-        Button(text='+', onTap=(
-            Alert("hey")
-        )),
+        TopNav(backgroundColor='#fff', labelText='dev'),
+        Builder(Content=Text('hello'), count=10)
     )

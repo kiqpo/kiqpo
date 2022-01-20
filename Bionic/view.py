@@ -14,6 +14,11 @@ from core import State
 from core import GetState
 from core import ReadJS
 from core import SetState
+from core.Flex import Flex,FlexOptions
+from core.TextFelid import TextFelid
+from core import ThisValue
+from core import GetValue
+
 
 
 Head = core.head
@@ -27,7 +32,12 @@ Builder = Builder.Builder
 Body = core.body
 PopUp = popUp.popUp
 Alert = alert.alert
+ThisValue = ThisValue.ThisValue
+TextFelid = TextFelid.TextFelid
 SetState = SetState.SetState
+GetValue = GetValue.GetValue
 State = State.State
 ReadJS = ReadJS.ReadJS
+Flex = Flex.Flex
+FlexOptions = FlexOptions.FlexOptions
 GetState = GetState.GetState

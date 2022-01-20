@@ -9,4 +9,4 @@ def Text(Text="", classname="", Type="h1", TextStyle="", Id="0"):
         if classname != "":
             return f"""<{Type} id={Id} class='{classname}'>{Text}</{Type}>"""
         else:
-            return f"""<{Type} id={Id} >{Text}</{Type}>"""
+            return f"""<{Type} id={Id}>{Text}</{Type}>"""
