@@ -49,7 +49,7 @@ print(bcolors.HEADER, """
 
 
     **********************************************************************
-    *                     Welcome to Bionic                              *
+    *                     Welcome to Kiqpo                               *
     *                       version 1.0                                  *
     *                                                                    *
     *                                                                    *
