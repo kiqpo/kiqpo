@@ -47,20 +47,20 @@ To get a local copy up and running follow these simple example steps.
 #### Installation 📥
 
 ```shell:
-pip install bionic.control
+pip install kiqpo
 ```
 
 #### Crafting new projct 👷
 
 ```shell:
-Bionic.py create hello_world
+kiqpo create hello_world
 ```
 
 #### Running & Testing ⚗️
 
 ```shell:
 cd Bionic
-bionic.py
+kiqpo
 ```
 
 #### Code example ⚡
