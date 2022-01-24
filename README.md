@@ -1,12 +1,12 @@
 <div align="center">
 <a href="https://kiqpo.github.io/kiqpo-dco/" ></a>
-<img width="16%" src="https://i.ibb.co/zVHfMDW/rounded-corners.png" />
+<img width="17%" src="https://i.ibb.co/HqPgpQN/rounded-corners-3.png" />
 
 <br/>
 
 <h3>kiqpo<h3>
 
-<img src="https://img.shields.io/badge/contributions-welcome-greenl?&logo=github">‏‎ ‎<img src="https://img.shields.io/badge/website-up-greenl"></img>
+<!-- <img src="https://img.shields.io/badge/contributions-welcome-greenl?&logo=github">‏‎ ‎<img src="https://img.shields.io/badge/website-up-greenl"></img> -->
 
 <b>
 <sub>
@@ -25,14 +25,12 @@
 
 </div>
 
-
 <div align="center">
 <img src="https://i.ibb.co/3TcpRH0/rounded-corners-1.png" >
 </br>
 </br>
 </br>
 </div>
-
 
 kiqpo is fast. It's powered core python without any extra dependencies.
 Bionic offers stateful hot reload, allowing you to make changes to your code and see the results instantly without restarting your app or losing its state.
@@ -92,4 +90,3 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 happy coding ❤️
-

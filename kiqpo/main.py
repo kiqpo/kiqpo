@@ -1,21 +1,17 @@
-from pydoc import classname
 from view import *
 
 
 def RunApp():
-    Head(style="./style.css"),
+    Head(title="Netflix", themeColor="#000000"),
     Body(
-        Div(
-            TopNav(backgroundColor="#f1f1f1"),
-            Text("Hey, kiqpo dev's", TextStyle=TextStyle(
-                FontSize="350%",
-                LetterSpacing="4px",
-                Weight="250",
-                Color="#ffffff"
-            )),
-            Img(src="https://i.ibb.co/zVHfMDW/rounded-corners.png", classname="icon"),
-            Link(url="https://kiqpo.github.io/kiqpo-dco/",
-                 name="Get started | doc", classname="url-doc"),
-            classname="bg"
-        ),
-    )
+        TopNav(backgroundColor="#000000", labelgap="3%", label=Text(
+            "Netflix", TextStyle=TextStyle(
+                Color='red',
+                FontSize='220%',
+                Weight='900'
+            ),
+        )),
+        Padding(child=Text('welcome to Netflix-India', TextStyle=TextStyle(
+            FontSize="100%"
+        ))),
+    ),

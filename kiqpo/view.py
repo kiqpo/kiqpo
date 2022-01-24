@@ -2,7 +2,6 @@
 from core.jsLib import alert
 from core.jsLib import popUp
 from core.lib.topNav import topNav
-from core import Head
 from core import core
 from core import Button
 from core import Builder
@@ -18,6 +17,7 @@ from core.Flex import Flex,FlexOptions
 from core.TextFelid import TextFelid
 from core import Link
 from core import ThisValue
+from core.padding import Padding
 from core import GetValue
 
 
@@ -43,3 +43,5 @@ ReadJS = ReadJS.ReadJS
 Flex = Flex.Flex
 FlexOptions = FlexOptions.FlexOptions
 GetState = GetState.GetState
+Padding = Padding
+
