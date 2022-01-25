@@ -10,7 +10,7 @@
 
 <b>
 <sub>
-    <p>Open open source WEB-UI framework</p>
+    <p>Open source WEB-UI framework</p>
 </sub>
 </b>
 
