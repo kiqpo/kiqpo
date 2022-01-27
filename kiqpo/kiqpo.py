@@ -3,8 +3,10 @@
 
 
 # improting reqired modules
-from typing import Tuple
 import sys
+from multiprocessing import Process
+import webbrowser
+from livereload import Server, shell
 try:
     import main
 except:
@@ -43,80 +45,86 @@ except NameError as err:
 
 initialCode = inspect.getsource(main)
 
-
-# prompt user that loader is runing
-print(bcolors.HEADER, """
+# loop one
 
 
-    **********************************************************************
-    *                     Welcome to Bionic                              *
-    *                       version 1.0                                  *
-    *                                                                    *
-    *                                                                    *
-    *         crafting beautiful, fast user experiences for web          *
-    **********************************************************************
-
- """, bcolors.ENDC)
-print()
-print(bcolors.OKGREEN, "server started successfully ✓", bcolors.ENDC)
-print(bcolors.BOLD, "____________________________________________________", bcolors.BOLD)
-print()
-print("waiting for changes.")
+def livekiqposerver():
+    server = Server()
+    server.watch('native/', shell('make html', cwd='native'))
+    server.serve(root='./native', restart_delay=0)
 
 
-async def getNewCode():
-    # waiting to a new change in the user file ,code
-    # if the change have been orcared run if else statement in the
-    # getCode function and reload code(main.py) and run it.
-    # useing async function , so that we have to wait to writing the new native file(.html)
-    global NewCode
-    global OsTimeInitial
-    try:
-        reload(main)
-    except:
-        pass
-    time.sleep(00.1)
-    NewCode = inspect.getsource(main)
-    OsTimeInitial = time.time()
+def openwebbrowser():
+    webbrowser.open("http://127.0.0.1:5500")
 
 
-def getCode():
-    # if the new code have been founed
-    #  take that and run main.RunApp()
-    # funcation
-    # then reload main.py
-    global initialCode
-    if NewCode != initialCode:
-        # code have been changed
-        # now let reflect code changes
-        OsTimeNew = time.time()
-        initialCode = inspect.getsource(main)
-        # reflect code changes
+def codechanges():
+    print()
+    print(bcolors.HEADER, 'WELCOME TO KiQPO 0.1.0', bcolors.ENDC)
+    print()
+    print(bcolors.OKGREEN, "Compiled successfully!", bcolors.ENDC)
+    print("____________________________________________________")
+    print()
+
+    async def getNewCode():
+        # waiting to a new change in the user file ,code
+        # if the change have been orcared run if else statement in the
+        # getCode function and reload code(main.py) and run it.
+        # useing async function , so that we have to wait to writing the new native file(.html)
+        global NewCode
+        global OsTimeInitial
         try:
             reload(main)
-            main.RunApp()
-            # prompt ui have been updated
-            print()
-            print(
-                f"{bcolors.OKGREEN}➤ changes updated in : {bcolors.ENDC}{OsTimeNew-OsTimeInitial}")
-            print()
-        except Exception as err:
-            print(bcolors.FAIL, "➤ Error:", err, bcolors.ENDC)
         except:
-            print(bcolors.FAIL, "➤ Error:", "unknown error occurred", bcolors.ENDC)
+            pass
+        time.sleep(00.1)
+        NewCode = inspect.getsource(main)
+        OsTimeInitial = time.time()
 
+    def getCode():
+        # if the new code have been founed
+        #  take that and run main.RunApp()
+        # funcation
+        # then reload main.py
+        global initialCode
+        if NewCode != initialCode:
+            # code have been changed
+            # now let reflect code changes
+            OsTimeNew = time.time()
+            initialCode = inspect.getsource(main)
+            # reflect code changes
+            try:
+                reload(main)
+                main.RunApp()
+            # prompt ui have been updated
+                print()
+                print(
+                    f"{bcolors.OKGREEN}➤ changes updated in : {bcolors.ENDC}{OsTimeNew-OsTimeInitial}")
+                print()
+            except Exception as err:
+                print(bcolors.FAIL, "➤ Error:", err, bcolors.ENDC)
+            except:
+                print(bcolors.FAIL, "➤ Error:",
+                      "unknown error occurred", bcolors.ENDC)
 
-while True:
-    try:
-        asyncio.run(getNewCode())
-    # wait to take lest changes
-    # then call getCode fun
-        getCode()
-    except KeyboardInterrupt as err:
-        print(bcolors.OKBLUE, "server stop runing ●", bcolors.ENDC)
-        sys.exit()
-    except:
-        print(bcolors.FAIL, "Error:", "unknown error occurred", bcolors.ENDC)
+    while True:
+        try:
+            asyncio.run(getNewCode())
+        # wait to take lest changes
+        # then call getCode fun
+            getCode()
+        except KeyboardInterrupt as err:
+            print(bcolors.OKBLUE, "server stop runing ●", bcolors.ENDC)
+            sys.exit()
+        except:
+            print(bcolors.FAIL, "Error:", "unknown error occurred", bcolors.ENDC)
 
 
 # end if loader.py
+
+
+# starting point
+if __name__ == '__main__':
+    Process(target=livekiqposerver).start()
+    Process(target=codechanges).start()
+    Process(target=openwebbrowser).start()
