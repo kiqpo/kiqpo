@@ -1,11 +1,14 @@
 # This is Core code of hot reloading if any changes made to this file
-# There is chance to brake for program
+# There is chance to brake for program.
 
 
 # improting reqired modules
+from curses import window
 import sys
 from multiprocessing import Process
 import webbrowser
+from desktop import app
+from click import argument
 from livereload import Server, shell
 try:
     import main
@@ -123,8 +126,32 @@ def codechanges():
 # end if loader.py
 
 
+def method():
+    global runingmethod
+    runingmethod = ""
+    argumentlength = len(sys.argv)
+    # print(sys.argv)
+    methodName = sys.argv[argumentlength-1]
+    if(methodName == 'run-web'):
+        runingmethod = "WEB"
+    elif(methodName == "run-desktop"):
+        runingmethod = "DESKTOP"
+    else:
+        print("help")
+
+    return runingmethod
+
+
 # starting point
 if __name__ == '__main__':
-    Process(target=livekiqposerver).start()
-    Process(target=codechanges).start()
-    Process(target=openwebbrowser).start()
+    runwith = method()
+    if(runwith == "WEB"):
+        # start livekiqposerver
+        Process(target=livekiqposerver).start()
+        # start compling
+        Process(target=codechanges).start()
+        # open browser
+        Process(target=openwebbrowser).start()
+    elif(runwith == "DESKTOP"):
+        Process(target=codechanges).start()
+        Process(target=app.x).start()

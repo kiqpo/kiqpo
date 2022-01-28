@@ -16,8 +16,8 @@ def HTMLFile(Head, Body):
     {Body}
 </body>
   <script src="./core.js"></script>
+  <script src="./desktop.js"></script>
   <script src="/eel.js"></script>
-</script>
 </html>
     """
 

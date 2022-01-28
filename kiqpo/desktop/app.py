@@ -1,18 +1,9 @@
 import eel
-
-# this can be called from js.
-# my_python_function.
-
-
-@eel.expose
-def my_python_function():
-    print('hey')
+class GUI:
+    @eel.expose
+    def __init__(self):
+        eel.init("../kiqpo/native")
+        eel.start("index.html")
 
 
-@eel.expose
-def add(a, b):
-    print(a+b)
-
-
-eel.init('../native')
-eel.start('index.html')
+x = GUI()

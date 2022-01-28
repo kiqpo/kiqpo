@@ -1,5 +1,6 @@
 from view import *
 
+
 def RunApp():
     # head tag
     Head(title="Kiqpo", themeColor="#ffffff"),

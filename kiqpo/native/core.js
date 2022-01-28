@@ -11,23 +11,14 @@ window.onload = function () {
     console.log("Running in browser.");
   }
 
-
-
-  if(isInStandaloneMode()){
-    document.getElementById("platform").innerText="Running in kiqpo in desktop app"
-  }else{
-    document.getElementById("platform").innerText="Running in kiqpo in browser"
+  if (isInStandaloneMode()) {
+    document.getElementById("platform").innerText =
+      "Running in kiqpo in desktop app";
+  } else {
+    document.getElementById("platform").innerText =
+      "Running in kiqpo in browser";
   }
-
-
-
 };
-
-
-
-
-
-
 
 function popUp(Text = "", Info = "", ButtonText = "") {
   const card = document.createElement("div");
