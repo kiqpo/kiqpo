@@ -1,4 +1,4 @@
-def HeadCore(Title="Bionic-Ui", Css=True, Style="./style.css", ThemeColor="#1e90ff", SiteUrl="www.hey.com", Image_description="this is an image description", Imageurl="", Type="Landing-page", Keywords="", Description="", Author="", Icon="./src/icon.ico"):
+def HeadCore(Title="Bionic-Ui", Css=True, Style="./css/core.css", ThemeColor="#119f7f", SiteUrl="www.hey.com", Image_description="this is an image description", Imageurl="", Type="Landing-page", Keywords="", Description="", Author="", Icon="./src/icon.ico"):
     if Css == True:
         return f"""<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +12,8 @@ def HeadCore(Title="Bionic-Ui", Css=True, Style="./style.css", ThemeColor="#1e90
     <meta property="og:description" content="{Image_description}" />
     <meta property="og:image" itemprop="image" content="{Imageurl}" />
     <meta property="og:type" content="{Type}"/>
-    <link href="{Style}" rel="stylesheet" />
-    <link href="./core.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/material-components.min.css">
+    <link href="./css/core.css" rel="stylesheet" />
     <link rel="icon" href="{Icon}" sizes="16x16" type="image/ico" />
       <title>{Title}</title>"""
     else:
@@ -29,7 +29,7 @@ def HeadCore(Title="Bionic-Ui", Css=True, Style="./style.css", ThemeColor="#1e90
     <meta property="og:description" content="{Image_description}" />
     <meta property="og:image" itemprop="image" content="{Imageurl}" />
     <meta property="og:type" content="{Type}"/>
+    <link rel="stylesheet" href="./css/material-components.min.css">
     <link rel="icon" href="{Icon}" sizes="16x16" type="image/ico" />
-    <link href="{Style}" rel="stylesheet" />
-    <link href="./core.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/core.css" />
     <title>{Title}</title>"""

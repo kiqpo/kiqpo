@@ -6,18 +6,32 @@ def Mode():
     } """
 
 
-def HTMLFile(Head, Body):
+def HTMLFile(Head, Body, Topleavel,WindowswindowRender):
     Html = f"""<!DOCTYPE html>
 <html lang="en">
+
 <head>
     {Head}
 </head>
+
 <body>
     {Body}
 </body>
-  <script src="./core.js"></script>
-  <script src="./desktop.js"></script>
+
+  <script src="./js/material-components-web.js"></script>
+  <script src="./js/core.js"></script>
+  <script src="./js/navigate.js"></script>
   <script src="/eel.js"></script>
+
+  <script>
+    {Topleavel}
+    eel.expose(say_hello_js)
+  </script>
+
+    <script>
+    {WindowswindowRender}
+  </script>
+
 </html>
     """
 

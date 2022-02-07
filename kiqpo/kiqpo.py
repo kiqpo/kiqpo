@@ -154,4 +154,4 @@ if __name__ == '__main__':
         Process(target=openwebbrowser).start()
     elif(runwith == "DESKTOP"):
         Process(target=codechanges).start()
-        Process(target=app.x).start()
+        Process(target=app.main).start()

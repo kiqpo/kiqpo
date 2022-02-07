@@ -1,4 +1,4 @@
-def Text(Text="", classname="", Type="h1", TextStyle="", Id="0"):
+def Text(Text="", classname="", Type="p", TextStyle="", Id="0"):
     if TextStyle != "":
         if classname != "":
             return f"""<{Type} id={Id} class='{classname}' style='{TextStyle}'>{Text}</{Type}>"""

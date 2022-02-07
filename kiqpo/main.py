@@ -1,28 +1,15 @@
 from view import *
+from pages import home, user
 
 
 def RunApp():
-    # head tag
-    Head(title="Kiqpo", themeColor="#ffffff"),
+    Head(),
     Body(
-        # navbar at the top.
-        TopNav(backgroundColor="#ffffff", labelgap="3%", label=Text(
-            "Kiqpo", TextStyle=TextStyle(
-                Color='green',
-                FontSize='220%',
-                Weight='900'),
-        )),
+        TopNav(Title="Kiqpo"),
+        Window(home.Home(), user.user()),
+        SafeArea(
+            Navigate("user-page", 1, "User", 'Home-page'),
+            Navigate("home-page", 0, "Home", 'User-page'),
 
-        # text with padding
-        Padding(child=Text('Hello from kiqpo.', TextStyle=TextStyle(
-            FontSize="160%",
-            Color="#292827",
-            Weight='900'
-        )), top='0.5%', left="1%"),
-
-        # text with padding & sub heading
-        Padding(child=Text('Runing in kiqpo in', Id="platform", TextStyle=TextStyle(
-            FontSize='85%',
-            Weight="550"
-        )), top='0%', left="1%")
+        ),
     ),

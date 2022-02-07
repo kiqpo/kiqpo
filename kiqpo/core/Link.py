@@ -1,2 +1,2 @@
 def Link(name="",url="",classname=""):
-    return f"<a class='{classname}' href='{url}'>{name}</a>"
+    return f"<a id='link' class='{classname}' href='{url}'>{name}</a>"
