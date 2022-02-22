@@ -2,6 +2,33 @@ body {
   margin: 0px !important;
 }
 
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+img,
+h6 {
+  user-select: none;
+  user-zoom: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+h6{
+  cursor: default;
+}
+
+
+
 /* fallback */
 @font-face {
   font-family: "Material Icons";
@@ -58,8 +85,7 @@ body {
   background: #b3b2b2c5;
 }
 
-.mdc-card{
+.mdc-card {
   width: 500px;
   height: 350px !important;
 }
-

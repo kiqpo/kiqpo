@@ -30,11 +30,13 @@ from core import Icons
 from core import buttonstyle
 from core import listener
 from core import math
+from core import Colors
 from core import IconButton
 
 
 
 Head = core.head
+Colors = Colors
 Card = Card.Card
 SafeArea = safeArea.safeArea
 Icons = Icons
