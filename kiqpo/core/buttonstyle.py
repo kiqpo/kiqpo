@@ -1,5 +1,3 @@
-from tkinter import W
-
 def buttonstyle(borderRadius="None", background="None", width="None"):
     getstyle = line(borderRadius, background, width)
     return f"""

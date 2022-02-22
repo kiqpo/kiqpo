@@ -6,7 +6,7 @@ def Mode():
     } """
 
 
-def HTMLFile(Head, Body, Topleavel,WindowswindowRender):
+def HTMLFile(Head, Body, Topleavel,WindowswindowRender,Theme):
     Html = f"""<!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +30,7 @@ def HTMLFile(Head, Body, Topleavel,WindowswindowRender):
 
     <script>
     {WindowswindowRender}
+    {Theme}
   </script>
 
 </html>

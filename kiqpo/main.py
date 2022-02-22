@@ -1,15 +1,22 @@
 from view import *
-from pages import home, user
+from pages import home, account
 
 
 def RunApp():
     Head(),
     Body(
-        TopNav(Title="Kiqpo"),
-        Window(home.Home(), user.user()),
+        Window(home.home(), account.account()),
+        setTheme(),
         SafeArea(
-            Navigate("user-page", 1, "User", 'Home-page'),
-            Navigate("home-page", 0, "Home", 'User-page'),
-
+            TopNav(Title="kiqpo"),
+            Padding(
+                IconButton(
+                    text='account',
+                    icon=Icons.account_circle,
+                    onTap=Navigator('account', 1, 'account settings', 'Home'))),
+            Padding(
+                IconButton(text='home',
+                           icon=Icons.home,
+                           onTap=Navigator('home', 0, 'home', 'Account'))),
         ),
-    ),
+    )

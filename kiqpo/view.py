@@ -6,7 +6,10 @@ from core import core
 from core import safeArea
 from core import Button
 from core import Builder
+from core import DivStyle
+from core import Card
 from core import Text
+from core import Navigator
 from core import Div
 from core.TextStyle import TextStyle
 from core import targetValue
@@ -23,20 +26,28 @@ from core import Link
 from core import ThisValue
 from core.padding import Padding
 from core import GetValue
+from core import Icons
 from core import buttonstyle
 from core import listener
 from core import math
+from core import IconButton
 
 
 
 Head = core.head
+Card = Card.Card
 SafeArea = safeArea.safeArea
+Icons = Icons
 TopLeavelScript = core.TopLeavelScript
+Navigator = Navigator.Navigator
 Window = core.Window
+IconButton = IconButton.IconButton
+DivStyle = DivStyle.Divstyle
 Navigate = Navigate.navigate
 Button = Button.Button
 buttonstyle = buttonstyle.buttonstyle
 Text = Text.Text
+setTheme =  core.setTheme
 Link = Link.Link
 Listener = listener.listener
 Div = Div.Div

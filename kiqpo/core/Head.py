@@ -14,6 +14,7 @@ def HeadCore(Title="Bionic-Ui", Css=True, Style="./css/core.css", ThemeColor="#1
     <meta property="og:type" content="{Type}"/>
     <link rel="stylesheet" href="./css/material-components.min.css">
     <link href="./css/core.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/theme.css" />
     <link rel="icon" href="{Icon}" sizes="16x16" type="image/ico" />
       <title>{Title}</title>"""
     else:
@@ -32,4 +33,5 @@ def HeadCore(Title="Bionic-Ui", Css=True, Style="./css/core.css", ThemeColor="#1
     <link rel="stylesheet" href="./css/material-components.min.css">
     <link rel="icon" href="{Icon}" sizes="16x16" type="image/ico" />
     <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
     <title>{Title}</title>"""

@@ -1,4 +1,6 @@
-# This is Core code of hot reloading if any changes made to this file
+#!/usr/bin/python3
+
+# If any changes made to this file
 # There is chance to brake for program.
 
 
@@ -53,8 +55,8 @@ initialCode = inspect.getsource(main)
 
 def livekiqposerver():
     server = Server()
-    server.watch('native/', shell('make html', cwd='native'))
-    server.serve(root='./native', restart_delay=0)
+    server.watch('./kiqpo/native', shell('make html', cwd='native'))
+    server.serve(root='./kiqpo/native', restart_delay=0)
 
 
 def openwebbrowser():
@@ -137,7 +139,7 @@ def method():
     elif(methodName == "run-desktop"):
         runingmethod = "DESKTOP"
     else:
-        print("help")
+        print(str(methodName+" is undefined,help wwww.github.com/kiqpo."))
 
     return runingmethod
 

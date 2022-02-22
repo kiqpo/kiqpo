@@ -1,5 +1,5 @@
 body {
-  margin: 0px;
+  margin: 0px !important;
 }
 
 /* fallback */
@@ -55,12 +55,11 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(145, 144, 144);
+  background: #b3b2b2c5;
 }
 
+.mdc-card{
+  width: 500px;
+  height: 350px !important;
+}
 
-
-
-
-
-/* theme */

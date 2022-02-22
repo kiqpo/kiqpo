@@ -1,0 +1,31 @@
+{
+    "appName":"kiqpo",
+    "version":1.0,
+    "description":"This app is build using kiqpo.",
+    "url":"www.example.com",
+    "theme":{
+        "primary":"#0A84FF",
+        "secondary":"#F2F2F7",
+        "background":"#ffffff",
+        "error":"#F44336",
+        "surface":"#ffffff",
+        "text-primary":"black",
+        "text-secondary":"#212121"
+    },
+    "github":"www.github.com/example",
+    "authors":[
+        "developer-1",
+        "developer-2",
+        "developer-3"
+    ],
+
+    "dependencies":{
+        "kiqpo":"1.0"
+    },
+    "scripts":{
+        "web":"python3 kiqpo.py run-web",
+        "desktop":"python3 kiqpo.py run-desktop",
+        "build":"python3 kiqpo.py run-desktop"
+
+    }
+}

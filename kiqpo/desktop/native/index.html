@@ -16,17 +16,19 @@
     <meta property="og:type" content="Landing-page"/>
     <link rel="stylesheet" href="./css/material-components.min.css">
     <link href="./css/core.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/theme.css" />
     <link rel="icon" href="./src/icon.ico" sizes="16x16" type="image/ico" />
       <title>Kiqpo</title>
 </head>
 
 <body>
-    <header style='background-color:#119f7f;' class="mdc-top-app-bar">
+    <main class="mdc-top-app-bar--fixed-adjust">
+  <header style='background-color:var(--primary);;' class="mdc-top-app-bar">
         <div class="mdc-top-app-bar__row">
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
                 <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
                     aria-label="Open navigation menu">menu</button>
-                <span class="mdc-top-app-bar__title">Kiqpo</span>
+                <span class="mdc-top-app-bar__title">kiqpo</span>
             </section>
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
                 <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
@@ -37,12 +39,15 @@
                     aria-label="Options">more_vert</button>
             </section>
         </div>
-    </header><main class="mdc-top-app-bar--fixed-adjust">
-  <div class='Navigate-kiqpo' >
-                <a onclick="Navigate('user-page', 1, 'User', 'Home-page')" href='user-page' id='Navigate'>User</a>
-            </div><div class='Navigate-kiqpo' >
-                <a onclick="Navigate('home-page', 0, 'Home', 'User-page')" href='home-page' id='Navigate'>Home</a>
-            </div>
+    </header><div style='padding:1.5%;' ><button style='background: var(--primary);' onclick='Navigate("account",1,"account settings","Home")' id=0 class="mdc-button mdc-button--raised mdc-button--leading">
+  <span class="mdc-button__ripple"></span>
+  <i class="material-icons mdc-button__icon" aria-hidden="true">account_circle</i>
+  <span class="mdc-button__label">account</span>
+</button></div><div style='padding:1.5%;' ><button style='background: var(--primary);' onclick='Navigate("home",0,"home","Account")' id=0 class="mdc-button mdc-button--raised mdc-button--leading">
+  <span class="mdc-button__ripple"></span>
+  <i class="material-icons mdc-button__icon" aria-hidden="true">home</i>
+  <span class="mdc-button__label">home</span>
+</button></div>
 </main>
 </body>
 
@@ -59,8 +64,57 @@
     <script>
     
     const main = document.getElementsByTagName("main")[0];
-    let windowRenders = ["<div style='' class='Home-page' ><div style='' class='' ></div><p id=0>Home page</p></div>","<div style='' class='User-page' ><p id=0>welcome to user page</p></div>"]
+    let windowRenders = [`<div style='' class='Home' ><div style='padding:1.5%;' >
+    <div style="" >
+        <p id=0 style='
+    color:#000000;
+    font-size: 290%;
+    background: transparent;
+    font-weight: 900;
+    letter-spacing: 1;
+    margin: 0px
+    '>Welcome</p><p id=0 style='
+    color:#000000;
+    font-size: 100%;
+    background: transparent;
+    font-weight: 500;
+    letter-spacing: 1;
+    margin: 0px
+    '>shajin_sha</p>
+    </div>
+    </div></div>`,`<div style='' class='Account' ><div style='padding:1.5%;' >
+    <div style="" >
+        <p id=0 style='
+    color:#000000;
+    font-size: 290%;
+    background: transparent;
+    font-weight: 900;
+    letter-spacing: 1;
+    margin: 0px
+    '>Account settings</p><p id=0 style='
+    color:#000000;
+    font-size: 100%;
+    background: transparent;
+    font-weight: 500;
+    letter-spacing: 1;
+    margin: 0px
+    '>shajin_sha</p>
+    </div>
+    </div></div>`]
     main.insertAdjacentHTML('afterbegin',windowRenders[0])
+    
+        document.documentElement.style.setProperty('--primary', '#0A84FF');
+        document.documentElement.style.setProperty('--error', '#F44336');
+        document.documentElement.style.setProperty('--secondary', '#F2F2F7');
+        document.documentElement.style.setProperty('--background', '#ffffff');
+        document.documentElement.style.setProperty('--textSecondary', '#212121');
+
+        document.documentElement.style.setProperty('--mdc-theme-on-primary', '#F2F2F7');
+        document.documentElement.style.setProperty('--mdc-theme-primary', '#0A84FF');
+        document.documentElement.style.setProperty('--mdc-theme-error', '#F44336');
+        
+
+        
   </script>
 
 </html>

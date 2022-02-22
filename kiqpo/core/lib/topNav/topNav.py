@@ -1,4 +1,4 @@
-def topNav(Title="", fillColor="#119f7f"):
+def topNav(Title="", fillColor="var(--primary);"):
     return f"""<header style='background-color:{fillColor};' class="mdc-top-app-bar">
         <div class="mdc-top-app-bar__row">
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">

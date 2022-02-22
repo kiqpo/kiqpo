@@ -1,4 +1,4 @@
-from turtle import goto, st
+import json
 from core.Head import HeadCore
 from core.compile import HTMLFile
 
@@ -8,29 +8,31 @@ windowswindowRendersJs = ""
 HeadTag = ""
 global topleavelscript
 topleavelscript = ""
+global getTheme
+getTheme = ""
 
 
 def body(*data):
-    file = open('./native/index.html', 'w+')
+    file = open('./kiqpo/native/index.html', 'w+')
 
     HtmlTagsList = [*data]
     HtmlTags = ""
     for ele in HtmlTagsList:
         HtmlTags += ele
     file.write(HTMLFile(Body=HtmlTags, Head=HeadTag,
-               Topleavel=topleavelscript, WindowswindowRender=windowswindowRendersJs))
+               Topleavel=topleavelscript, WindowswindowRender=windowswindowRendersJs, Theme=getTheme))
     file.close()
 
     # save same index.html to desktop native dir
 
-    DesktopHTML = open('./desktop/native/index.html', 'w+')
+    DesktopHTML = open('./kiqpo/desktop/native/index.html', 'w+')
 
     HtmlTagsList = [*data]
     HtmlTags = ""
     for ele in HtmlTagsList:
         HtmlTags += ele
     DesktopHTML.write(HTMLFile(Body=HtmlTags, Head=HeadTag,
-                      Topleavel=topleavelscript, WindowswindowRender=windowswindowRendersJs))
+                      Topleavel=topleavelscript, WindowswindowRender=windowswindowRendersJs, Theme=getTheme))
     DesktopHTML.close()
 
 
@@ -51,9 +53,9 @@ def Window(*window):
     Renderingwindow = ""
     for i in range(windows):
         if(Renderingwindow == ""):
-            Renderingwindow = Renderingwindow + '"'+window[i]+'"'
+            Renderingwindow = Renderingwindow + '`'+window[i]+'`'
         else:
-            Renderingwindow = Renderingwindow + "," + '"'+window[i]+'"'
+            Renderingwindow = Renderingwindow + "," + '`'+window[i]+'`'
 
     Renderingwindow = "["+Renderingwindow+"]"
 
@@ -63,3 +65,55 @@ def Window(*window):
     main.insertAdjacentHTML('afterbegin',windowRenders[0])"""
 
     return ""
+
+
+def setTheme(Theme=""):
+    if(Theme == ""):
+        with open('./kiqpo/config.json') as fp:
+            data = json.load(fp)
+            primary = data['theme']["primary"]
+            secondary = data['theme']["secondary"]
+            background = data['theme']['background']
+            error = data['theme']['error']
+            textSecondary = data['theme']['text-secondary']
+
+        global getTheme
+        getTheme = f"""
+        document.documentElement.style.setProperty('--primary', '{primary}');
+        document.documentElement.style.setProperty('--error', '{error}');
+        document.documentElement.style.setProperty('--secondary', '{secondary}');
+        document.documentElement.style.setProperty('--background', '{background}');
+        document.documentElement.style.setProperty('--textSecondary', '{textSecondary}');
+
+        document.documentElement.style.setProperty('--mdc-theme-on-primary', '{secondary}');
+        document.documentElement.style.setProperty('--mdc-theme-primary', '{primary}');
+        document.documentElement.style.setProperty('--mdc-theme-error', '{error}');
+        
+
+        """
+
+        return ""
+    else:
+        with open('./kiqpo/core/themes/const/themes.json') as fp:
+            data = json.load(fp)[Theme]
+            primary = data["primary"]
+            secondary = data["secondary"]
+            background = data['background']
+            error = data['error']
+            textSecondary = data['text-secondary']
+
+            getTheme = f"""
+            document.documentElement.style.setProperty('--primary', '{primary}');
+            document.documentElement.style.setProperty('--error', '{error}');
+            document.documentElement.style.setProperty('--secondary', '{secondary}');
+            document.documentElement.style.setProperty('--background', '{background}');
+            document.documentElement.style.setProperty('--textSecondary', '{textSecondary}');
+
+            document.documentElement.style.setProperty('--mdc-theme-on-primary', '{secondary}');
+            document.documentElement.style.setProperty('--mdc-theme-primary', '{primary}');
+            document.documentElement.style.setProperty('--mdc-theme-error', '{error}');
+            
+            
+            """
+
+        return ""
