@@ -1,3 +1,19 @@
+from core.dev import conditionalOperator
+
+
+stylePros = """
+        document.documentElement.style.setProperty('--primary', '#0A84FF');
+        document.documentElement.style.setProperty('--error', '#F44336');
+        document.documentElement.style.setProperty('--secondary', '#F2F2F7');
+        document.documentElement.style.setProperty('--background', '#ffffff');
+        document.documentElement.style.setProperty('--textSecondary', '#212121');
+
+        document.documentElement.style.setProperty('--mdc-theme-on-primary', '#F2F2F7');
+        document.documentElement.style.setProperty('--mdc-theme-primary', '#0A84FF');
+        document.documentElement.style.setProperty('--mdc-theme-error', '#F44336');
+        """
+
+
 def Mode():
     return """ if(isInStandaloneMode()){
     var script = document.createElement("script");
@@ -6,10 +22,9 @@ def Mode():
     } """
 
 
-def HTMLFile(Head, Body, Topleavel,WindowswindowRender,Theme):
+def HTMLFile(Head, Body, Topleavel, WindowswindowRender, Theme):
     Html = f"""<!DOCTYPE html>
 <html lang="en">
-
 <head>
     {Head}
 </head>
@@ -31,9 +46,9 @@ def HTMLFile(Head, Body, Topleavel,WindowswindowRender,Theme):
     <script>
     {WindowswindowRender}
     {Theme}
+    {conditionalOperator.ConditionalOperator(Theme,"",stylePros)}
   </script>
 
 </html>
     """
-
     return Html

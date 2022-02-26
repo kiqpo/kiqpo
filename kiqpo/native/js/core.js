@@ -12,11 +12,11 @@ if (isInStandaloneMode()) {
   runningMood = "DESKTOP";
   window.addEventListener("contextmenu", (e) => e.preventDefault());
 
-  (function (proxied) {
-    window.alert = function () {
-      console.log(arguments[0]);
-    };
-  })(window.alert);
+  // (function (proxied) {
+  //   window.alert = function () {
+  //     console.log(arguments[0]);
+  //   };
+  // })(window.alert);
 } else {
   console.log("webapp is not installed");
   runningMood = "WEB";
@@ -58,5 +58,3 @@ localStorage.setItem("runningMood", runningMood);
 
 
 mdc.textField.MDCTextField.attachTo(document.querySelector(".mdc-text-field"));
-mdc.ripple.MDCRipple.attachTo(document.querySelector(".mdc-button__ripple"));
-// mdc-button__ripple

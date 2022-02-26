@@ -88,8 +88,6 @@ def setTheme(Theme=""):
         document.documentElement.style.setProperty('--mdc-theme-on-primary', '{secondary}');
         document.documentElement.style.setProperty('--mdc-theme-primary', '{primary}');
         document.documentElement.style.setProperty('--mdc-theme-error', '{error}');
-        
-
         """
 
         return ""

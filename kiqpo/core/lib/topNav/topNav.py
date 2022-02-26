@@ -6,13 +6,16 @@ def topNav(Title="", fillColor="var(--primary);"):
                     aria-label="Open navigation menu">menu</button>
                 <span class="mdc-top-app-bar__title">{Title}</span>
             </section>
-            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                    aria-label="Favorite">favorite</button>
-                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                    aria-label="Search">search</button>
-                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                    aria-label="Options">more_vert</button>
-            </section>
+
         </div>
     </header>"""
+
+
+            # """<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+            #     <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+            #         aria-label="Favorite">favorite</button>
+            #     <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+            #         aria-label="Search">search</button>
+            #     <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+            #         aria-label="Options">more_vert</button>
+            # </section>"""

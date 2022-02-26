@@ -1,4 +1,4 @@
-def img(src='',alt='img',classname=''):
+def img(src='',alt='img',classname='',style=""):
     return f"""
-    <img class='{classname}' src="{src}" alt='{alt}'' />
+    <img style='{style}' class='{classname}' src="{src}" alt='{alt}'' />
     """

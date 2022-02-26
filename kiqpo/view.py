@@ -7,6 +7,7 @@ from core import safeArea
 from core import Button
 from core import Builder
 from core import DivStyle
+from core import ImageStyle
 from core import Card
 from core import Text
 from core import Navigator
@@ -42,6 +43,7 @@ SafeArea = safeArea.safeArea
 Icons = Icons
 TopLeavelScript = core.TopLeavelScript
 Navigator = Navigator.Navigator
+ImageStyle = ImageStyle.ImageStyle
 Window = core.Window
 IconButton = IconButton.IconButton
 DivStyle = DivStyle.Divstyle
@@ -57,9 +59,9 @@ Screen = math.screen
 Px = math.px
 Vh = math.vh
 Vw = math.vw
-TopNav = topNav.topNav
+TopAppBar = topNav.topNav
 TextStyle = TextStyle.TextStyle
-Img = Img.img
+Image = Img.img
 Builder = Builder.Builder
 Body = core.body
 PopUp = popUp.popUp
