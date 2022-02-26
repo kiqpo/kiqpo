@@ -1,22 +1,20 @@
 <div align="center">
-<a href="https://kiqpo.github.io/kiqpo-dco/" ></a>
-<img width="17%" src="https://i.ibb.co/HqPgpQN/rounded-corners-3.png" />
-
+<img width='90%' alt='Kiqpo-python web ui framework applications' src='https://www.linkpicture.com/q/kiqpo_1.svg'></img>
 <br/>
+    
 
 <h3>kiqpo<h3>
 
-<!-- <img src="https://img.shields.io/badge/contributions-welcome-greenl?&logo=github">‏‎ ‎<img src="https://img.shields.io/badge/website-up-greenl"></img> -->
 
 <b>
 <sub>
-    <p>Open source WEB-UI framework</p>
+    <p>Build web apps faster than ever</p>
 </sub>
 </b>
 
   <p>
     <sub>
-      Built with ❤︎ by
+      Built by
       <a href="https://github.com/kiqpo/kiqpo/graphs/contributors">
         contributors
       </a>
