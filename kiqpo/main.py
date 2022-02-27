@@ -1,7 +1,9 @@
-from view import *
+from view import*
 
 def RunApp():
     Head(),
     Body(
-        Text('hello from kiqpo!')
-    ),
+        Button(
+            label='hello',
+        ),
+    );
