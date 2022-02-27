@@ -1,6 +1,5 @@
 
 from core.jsLib import alert
-from core.jsLib import popUp
 from core.lib.topNav import topNav
 from core import core
 from core import safeArea
@@ -64,7 +63,6 @@ TextStyle = TextStyle.TextStyle
 Image = Img.img
 Builder = Builder.Builder
 Body = core.body
-PopUp = popUp.popUp
 Alert = alert.alert
 ThisValue = ThisValue.ThisValue
 TextFelid = TextFelid
