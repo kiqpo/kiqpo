@@ -1,7 +1,8 @@
 from view import*
 
+
 def RunApp():
     Head(),
     Body(
-        Text('hello')
-    );
+        Text('hello welcome')
+    )
