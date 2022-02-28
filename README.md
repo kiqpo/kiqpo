@@ -3,8 +3,6 @@
 <br/>
 <br/>
     
-    
-
 <img width='15%' src='https://www.linkpicture.com/q/icon-kiqpo.png' />
 <h3>Kiqpo</h3>
 <b>
@@ -12,10 +10,16 @@
     <p>Build web apps faster than ever</p>
 </sub>
 </b>
-
- <sub>
-    <p>comming soon</p>
-</sub>
-    
-    
 </div>
+<br/>
+
+<a align="center">
+    <a href='www.google.com'>
+          <img width='17%' src='https://www.linkpicture.com/q/button_1.png'/>
+    </a>
+        <a href='www.google.com'>
+          <img width='17%' src='https://www.linkpicture.com/q/Group-7_3.png'/>
+    </a>
+</p>
+
+
