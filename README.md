@@ -12,14 +12,3 @@
 </b>
 </div>
 <br/>
-
-<a align="center">
-    <a href='www.google.com'>
-          <img width='17%' src='https://www.linkpicture.com/q/button_1.png'/>
-    </a>
-        <a href='www.google.com'>
-          <img width='17%' src='https://www.linkpicture.com/q/Group-7_3.png'/>
-    </a>
-</p>
-
-
