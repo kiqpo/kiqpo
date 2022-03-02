@@ -8,6 +8,7 @@
 <b>
 <sub>
     <p>Build web apps faster than ever</p>
+    <p>Check out Kiqpo's pre-alpha releases</p> <a href='https://github.com/kiqpo/pre-alpha'>Kiqpo pre-alpha 📢</a>
 </sub>
 </b>
 </div>
