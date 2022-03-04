@@ -37,7 +37,7 @@ By making use of [KIQPO](https://github/kiqpo), you can build beautiful, fast, a
 
 We want to enable designers to deliver their full creative vision without being forced to water it down due to limitations of the underlying framework.
 that's why we follow [google](https://github.com/google)'s [material design](https://github.com/material-components) system.
-<!-- ![ezgif-com-gif-maker.gif](https://postimg.cc/sMN0v82Z) -->
+<img src='https://github.com/kiqpo/kiqpo/blob/assets/images/unnamed.png' width='100%'>
 
 ### Productive development
 
