@@ -33,6 +33,7 @@
 By making use of [KIQPO](https://github/kiqpo), you can build beautiful, fast, and reliable web applications without relying on [JavaScript](https://github.com/topics/javascript) frameworks, [HTML](https://github.com/topics/HTML) templates, request parsing, or state management. All of this is done using [Python](https://github.com/python) and we're targeting web, [Windows](https://github.com/microsoft), [macOS](https://github.com/topics/macos), [Linux](https://github.com/topics/linux) platforms
 
 ### Beautiful user interface
+<sub>kiqpo and google's material design </sub>
 
 We want to enable designers to deliver their full creative vision without being forced to water it down due to limitations of the underlying framework.
 that's why we follow [google](https://github.com/google)'s [material design](https://github.com/material-components) system.
