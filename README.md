@@ -21,9 +21,9 @@
 
 
 
-- [Installation](https://github.com/kiqpo/pre-alpha/blob/main/doc/Installation.md)
-- [Usage](https://github.com/kiqpo/pre-alpha/blob/main/doc/Usage.md)
-- [Contribution](https://github.com/kiqpo/pre-alpha/blob/main/doc/CONTRIBUTING.md)
+- [Installation](https://github.com/kiqpo/kiqpo/blob/docs/Installation.md)
+- [Usage](https://github.com/kiqpo/kiqpo/blob/docs/Usage.md)
+- [Contribution](https://github.com/kiqpo/kiqpo/blob/docs/CONTRIBUTING.md)
 - [Documentation](http://kiqpo.software)
 
 ### About Kiqpo
