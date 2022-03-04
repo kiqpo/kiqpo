@@ -21,7 +21,7 @@
 
 
 
-- [Installation](https://github.com/kiqpo/kiqpo/blob/docs/Installation.md)
+- [Install kiqpo](https://github.com/kiqpo/kiqpo/blob/docs/Installation.md)
 - [Usage](https://github.com/kiqpo/kiqpo/blob/docs/Usage.md)
 - [Contribution](https://github.com/kiqpo/kiqpo/blob/docs/CONTRIBUTING.md)
 - [Documentation](http://kiqpo.software)
