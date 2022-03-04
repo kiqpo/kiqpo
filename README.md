@@ -1,4 +1,6 @@
-<img width='90%' alt='Kiqpo-python web ui framework applications' src='https://www.linkpicture.com/q/kiqpo_1.svg'/>
+<p align="center">
+  <img width='90%' alt='Kiqpo-python web ui framework applications' src='https://www.linkpicture.com/q/kiqpo_1.svg'/>
+</p>
 <br/>
 <br/>
 
