@@ -15,6 +15,8 @@
 
 > ⚠️ Kiqpo is **Unsuitable for production** as of now.
 
+<sub>Try and contribute | pre-alpha</sub>
+
 
 
 
