@@ -4,5 +4,5 @@ from view import*
 def RunApp():
     Head(),
     Body(
-        Text('hello welcome')
+        Padding(Text('hello welcome'))
     )
