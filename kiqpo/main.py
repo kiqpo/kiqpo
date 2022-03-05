@@ -1,8 +1,9 @@
+from cgitb import text
 from view import*
 
 
 def RunApp():
     Head(),
     Body(
-        Padding(Text('hello welcome'))
+        Text('hey')
     )

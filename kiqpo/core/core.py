@@ -1,5 +1,8 @@
 import json
+
+from build import os
 from core.Head import HeadCore
+import yaml
 from core.compile import HTMLFile
 
 
@@ -67,18 +70,19 @@ def Window(*window):
     return ""
 
 
-def setTheme(Theme=""):
-    if(Theme == ""):
-        with open('./kiqpo/config.json') as fp:
-            data = json.load(fp)
-            primary = data['theme']["primary"]
-            secondary = data['theme']["secondary"]
-            background = data['theme']['background']
-            error = data['theme']['error']
-            textSecondary = data['theme']['text-secondary']
+def setTheme():
+    print(f'{os.getcwd()}/config.yaml')
+    with open(f'{os.getcwd()}/config.yaml') as fp:
+        data = yaml.safe_load(fp)
+        print(data)
+        primary = data['theme']["primary"]
+        secondary = data['theme']["secondary"]
+        background = data['theme']['background']
+        error = data['theme']['error']
+        textSecondary = data['theme']['text-secondary']
 
-        global getTheme
-        getTheme = f"""
+    global getTheme
+    getTheme = f"""
         document.documentElement.style.setProperty('--primary', '{primary}');
         document.documentElement.style.setProperty('--error', '{error}');
         document.documentElement.style.setProperty('--secondary', '{secondary}');
@@ -90,28 +94,7 @@ def setTheme(Theme=""):
         document.documentElement.style.setProperty('--mdc-theme-error', '{error}');
         """
 
-        return ""
-    else:
-        with open('./kiqpo/core/themes/const/themes.json') as fp:
-            data = json.load(fp)[Theme]
-            primary = data["primary"]
-            secondary = data["secondary"]
-            background = data['background']
-            error = data['error']
-            textSecondary = data['text-secondary']
+    return ""
 
-            getTheme = f"""
-            document.documentElement.style.setProperty('--primary', '{primary}');
-            document.documentElement.style.setProperty('--error', '{error}');
-            document.documentElement.style.setProperty('--secondary', '{secondary}');
-            document.documentElement.style.setProperty('--background', '{background}');
-            document.documentElement.style.setProperty('--textSecondary', '{textSecondary}');
 
-            document.documentElement.style.setProperty('--mdc-theme-on-primary', '{secondary}');
-            document.documentElement.style.setProperty('--mdc-theme-primary', '{primary}');
-            document.documentElement.style.setProperty('--mdc-theme-error', '{error}');
-            
-            
-            """
-
-        return ""
+setTheme()

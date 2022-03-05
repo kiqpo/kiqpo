@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 
 # If any changes made to this file
-# There is chance to brake for program.
+# There is chance to brake program.
 
 
 # improting reqired modules
-from curses import window
 import sys
 from multiprocessing import Process
 import webbrowser
 from desktop import app
-from click import argument
 from livereload import Server, shell
 try:
     import main

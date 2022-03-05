@@ -1,3 +1,24 @@
 name: kiqpo
+description: This app is build using kiqpo.
+version: 1.0
+github: www.github/kiqpo/kiqpo
+
 paths:
   kiqpo: /kiqpo/kiqpo.py
+
+dependencies:
+  python:
+    python: 3.6
+    pip: 3.0
+
+  kiqpo:
+    kiqpo: 1.0
+
+theme:
+  primary: '#0A84FF'
+  secondary: '#F2F2F7'
+  background: '#ffffff'
+  error: '#F44336'
+  surface: '#ffffff'
+  text-primary: '#000000'
+  text-secondary: '#212121'
