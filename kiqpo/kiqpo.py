@@ -5,12 +5,10 @@
 
 
 # improting reqired modules
-from curses import window
 import sys
 from multiprocessing import Process
 import webbrowser
 from desktop import app
-from click import argument
 from livereload import Server, shell
 try:
     import main
@@ -55,8 +53,8 @@ initialCode = inspect.getsource(main)
 
 def livekiqposerver():
     server = Server()
-    server.watch('./kiqpo/native', shell('make html', cwd='native'))
-    server.serve(root='./kiqpo/native', restart_delay=0)
+    server.watch('../kiqpo/native', shell('make html', cwd='native'))
+    server.serve(root='../kiqpo/native', restart_delay=0)
 
 
 def openwebbrowser():

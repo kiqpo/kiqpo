@@ -4,6 +4,9 @@
 *.py[cod]
 *$py.class
 
+# kiqpo dev cli
+cli/
+
 # C extensions
 *.so
 
@@ -55,9 +58,6 @@ cover/
 # Translations
 *.mo
 *.pot
-
-
-
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/

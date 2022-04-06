@@ -13,7 +13,7 @@ getTheme = ""
 
 
 def body(*data):
-    file = open('./kiqpo/native/index.html', 'w+')
+    file = open('../kiqpo/native/index.html', 'w+')
 
     HtmlTagsList = [*data]
     HtmlTags = ""
@@ -25,7 +25,7 @@ def body(*data):
 
     # save same index.html to desktop native dir
 
-    DesktopHTML = open('./kiqpo/desktop/native/index.html', 'w+')
+    DesktopHTML = open('../kiqpo/desktop/native/index.html', 'w+')
 
     HtmlTagsList = [*data]
     HtmlTags = ""
