@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-
 # If any changes made to this file
 # There is chance to brake for program.
-
 
 # improting reqired modules
 import sys
@@ -19,9 +17,7 @@ import time
 import asyncio
 from importlib import reload
 
-
 # color code
-
 
 class bcolors:
     HEADER = '\033[95m'
@@ -34,7 +30,6 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-
 # run app at first time, get initialCode
 # only runing for first time,
 try:
@@ -44,26 +39,22 @@ except NameError as err:
     print(bcolors.FAIL, "Error:", err, bcolors.ENDC)
     print(bcolors.FAIL, "there fore server stop runing", bcolors.ENDC)
     sys.exit()
-
-
 initialCode = inspect.getsource(main)
 
 # loop one
-
-
 def livekiqposerver():
+    def hey():
+        print('hello')
     server = Server()
-    server.watch('../kiqpo/native', shell('make html', cwd='native'))
-    server.serve(root='../kiqpo/native', restart_delay=0)
-
+    server.watch('../kiqpo/native',shell('make html', cwd='native'))
+    server.serve(root='../kiqpo/native', restart_delay=10)
 
 def openwebbrowser():
     webbrowser.open("http://127.0.0.1:5500")
 
-
 def codechanges():
     print()
-    print(bcolors.HEADER, 'WELCOME TO KiQPO 0.1.0', bcolors.ENDC)
+    print(bcolors.HEADER, 'Welcome to kiqpo Pre-alpha', bcolors.ENDC)
     print()
     print(bcolors.OKGREEN, "Compiled successfully!", bcolors.ENDC)
     print("____________________________________________________")
@@ -122,15 +113,11 @@ def codechanges():
         except:
             print(bcolors.FAIL, "Error:", "unknown error occurred", bcolors.ENDC)
 
-
 # end if loader.py
-
-
 def method():
     global runingmethod
     runingmethod = ""
     argumentlength = len(sys.argv)
-    # print(sys.argv)
     methodName = sys.argv[argumentlength-1]
     if(methodName == 'run-web'):
         runingmethod = "WEB"
@@ -138,9 +125,7 @@ def method():
         runingmethod = "DESKTOP"
     else:
         print(str(methodName+" is undefined,help wwww.github.com/kiqpo."))
-
     return runingmethod
-
 
 # starting point
 if __name__ == '__main__':
