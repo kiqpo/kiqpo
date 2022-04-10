@@ -4,9 +4,6 @@
 *.py[cod]
 *$py.class
 
-# github
-.github/
-
 # kiqpo dev cli
 cli/
 
