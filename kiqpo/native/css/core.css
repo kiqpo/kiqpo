@@ -50,14 +50,9 @@ h6{
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
 
-.mdc-top-app-bar {
-  position: fixed;
-  top: 0px;
-}
 
 * {
   font-family: sans-serif;

@@ -12,7 +12,7 @@ def HeadCore(Title="Bionic-Ui", Css=True, Style="./css/core.css", ThemeColor="#1
     <meta property="og:description" content="{Image_description}" />
     <meta property="og:image" itemprop="image" content="{Imageurl}" />
     <meta property="og:type" content="{Type}"/>
-    <link rel="stylesheet" href="./css/material-components.min.css">
+    <link rel="stylesheet" href="./css/material.min.css">
     <link href="./css/core.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/theme.css" />
     <link rel="icon" href="{Icon}" sizes="16x16" type="image/ico" />
@@ -30,7 +30,7 @@ def HeadCore(Title="Bionic-Ui", Css=True, Style="./css/core.css", ThemeColor="#1
     <meta property="og:description" content="{Image_description}" />
     <meta property="og:image" itemprop="image" content="{Imageurl}" />
     <meta property="og:type" content="{Type}"/>
-    <link rel="stylesheet" href="./css/material-components.min.css">
+    <link rel="stylesheet" href="./css/material.min.css">
     <link rel="icon" href="{Icon}" sizes="16x16" type="image/ico" />
     <link rel="stylesheet" href="./css/core.css" />
     <link rel="stylesheet" href="./css/theme.css" />

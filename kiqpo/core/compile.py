@@ -33,7 +33,7 @@ def HTMLFile(Head, Body, Topleavel, WindowswindowRender, Theme):
     {Body}
 </body>
 
-  <script src="./js/material-components-web.js"></script>
+  <script src="./js/material.min.js"></script>
   <script src="./js/core.js"></script>
   <script src="./js/navigate.js"></script>
   <script src="/eel.js"></script>

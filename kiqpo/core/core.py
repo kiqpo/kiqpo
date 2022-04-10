@@ -36,7 +36,7 @@ def body(*data):
     DesktopHTML.close()
 
 
-def head(title="Kiqpo", style="./style.css", css=True, themeColor="#119f7f", siteUrl="www.hey.com", image_description="this is an image description", imageurl="#", Type="Landing-page", keywords="Bionic", description="Bionic is Python Framework for crafting beautiful, fast user experiences for web and is free and open source.", author="shajin-sha", icon="./src/icon.ico"):
+def head(title="Kiqpo", style="./style.css", css=True, themeColor="#3f51b5", siteUrl="www.hey.com", image_description="this is an image description", imageurl="#", Type="Landing-page", keywords="Bionic", description="Bionic is Python Framework for crafting beautiful, fast user experiences for web and is free and open source.", author="shajin-sha", icon="./src/icon.ico"):
     global HeadTag
     HeadTag = HeadCore(Title=title, Style=style,  Css=css, ThemeColor=themeColor, SiteUrl=siteUrl, Image_description=image_description,
                        Imageurl=imageurl, Type=Type, Keywords=keywords, Description=description, Author=author, Icon=icon)
@@ -69,7 +69,7 @@ def Window(*window):
 
 def setTheme(Theme=""):
     if(Theme == ""):
-        with open('./kiqpo/config.json') as fp:
+        with open('../kiqpo/config.json') as fp:
             data = json.load(fp)
             primary = data['theme']["primary"]
             secondary = data['theme']["secondary"]
@@ -92,7 +92,7 @@ def setTheme(Theme=""):
 
         return ""
     else:
-        with open('./kiqpo/core/themes/const/themes.json') as fp:
+        with open('../kiqpo/core/themes/const/themes.json') as fp:
             data = json.load(fp)[Theme]
             primary = data["primary"]
             secondary = data["secondary"]

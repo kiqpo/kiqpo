@@ -1,21 +1,28 @@
 def topNav(Title="", fillColor="var(--primary);"):
-    return f"""<header style='background-color:{fillColor};' class="mdc-top-app-bar">
-        <div class="mdc-top-app-bar__row">
-            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
-                    aria-label="Open navigation menu">menu</button>
-                <span class="mdc-top-app-bar__title">{Title}</span>
-            </section>
-
-        </div>
-    </header>"""
-
-
-            # """<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-            #     <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-            #         aria-label="Favorite">favorite</button>
-            #     <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-            #         aria-label="Search">search</button>
-            #     <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-            #         aria-label="Options">more_vert</button>
-            # </section>"""
+    """define Title for topAppbar like this -:\n
+    TopAppBar(Title="Kiqpo")"""
+    return f"""<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">{Title}</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">{Title}</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>"""
