@@ -1,4 +1,4 @@
-def HeadCore(Title="Bionic-Ui", Css=True, Style="./css/core.css", ThemeColor="#119f7f", SiteUrl="www.hey.com", Image_description="this is an image description", Imageurl="", Type="Landing-page", Keywords="", Description="", Author="", Icon="./src/icon.ico"):
+def HeadCore(Title="Bionic-Ui", Css=True, Style="./css/core.css", ThemeColor="#119f7f", SiteUrl="www.hey.com", Image_description="this is an image description", Imageurl="", Type="Landing-page", Keywords="", Description="", Author="", Icon="./assets/icons/png/icon.png"):
     if Css == True:
         return f"""<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@ def HeadCore(Title="Bionic-Ui", Css=True, Style="./css/core.css", ThemeColor="#1
     <meta name="author" content="{Author}" />
     <meta property="og:title" content="{Title}" />
     <meta property="og:url" content="{SiteUrl}" />
+    <link rel="manifest" href="/manifest.json" />
     <meta property="og:description" content="{Image_description}" />
     <meta property="og:image" itemprop="image" content="{Imageurl}" />
     <meta property="og:type" content="{Type}"/>
@@ -27,6 +28,7 @@ def HeadCore(Title="Bionic-Ui", Css=True, Style="./css/core.css", ThemeColor="#1
     <meta name="author" content="{Author}" />
     <meta property="og:title" content="{Title}" />
     <meta property="og:url" content="{SiteUrl}" />
+    <link rel="manifest" href="/manifest.json" />
     <meta property="og:description" content="{Image_description}" />
     <meta property="og:image" itemprop="image" content="{Imageurl}" />
     <meta property="og:type" content="{Type}"/>

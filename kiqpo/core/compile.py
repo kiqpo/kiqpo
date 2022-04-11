@@ -27,22 +27,18 @@ def HTMLFile(Head, Body, Topleavel, WindowswindowRender, Theme):
 <html lang="en">
 <head>
     {Head}
+    <script>
+    {Topleavel}
+  </script>
+  <script src="./js/startup.js"></script>
+  <script src="./js/material.min.js"></script>
 </head>
 
 <body>
     {Body}
 </body>
-
-  <script src="./js/material.min.js"></script>
   <script src="./js/core.js"></script>
   <script src="./js/navigate.js"></script>
-  <script src="/eel.js"></script>
-
-  <script>
-    {Topleavel}
-    eel.expose(say_hello_js)
-  </script>
-
     <script>
     {WindowswindowRender}
     {Theme}

@@ -1,2 +1,5 @@
-def State(Id, SetState):
-    return f"document.getElementById('{Id}').innerText='{SetState}'"
+def State(StateName=""):
+    return {
+        "state":StateName,
+        "isState":True,
+    }

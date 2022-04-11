@@ -2,6 +2,24 @@ let runningMood = "";
 let os = "";
 // app running mood
 
+
+// load serviceWorker
+const registerServiceWorker = false;
+window.onload = () => {
+  "use strict";
+  if ("serviceWorker" in navigator) {
+    if(registerServiceWorker){
+      navigator.serviceWorker.register("../sw.js");
+    }
+    else{
+      console.log('registerServiceWorker is disabled')
+    }
+
+  }
+  
+};
+
+
 const isInStandaloneMode = () =>
   window.matchMedia("(display-mode: standalone)").matches ||
   window.navigator.standalone ||
@@ -54,7 +72,3 @@ localStorage.setItem("os", getOS());
 // app running mood to localStorage
 localStorage.setItem("runningMood", runningMood);
 // save app running mood to localStorage
-
-
-
-mdc.textField.MDCTextField.attachTo(document.querySelector(".mdc-text-field"));

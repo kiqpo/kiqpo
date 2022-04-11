@@ -1,0 +1,21 @@
+{
+    "name": "Kiqpo-Pwa",
+    "short_name": "Kiqpo",
+    "icons": [
+      {
+        "src": "./assets/icons/png/256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "./assets/icons/png/512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "lang": "en-US",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "#0A84FF"
+  }

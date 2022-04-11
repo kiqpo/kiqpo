@@ -1,14 +1,19 @@
+/* Disable to to refresh  */
+/* Remove this live to Enable */
 body {
-  margin: 0px !important;
+  overscroll-behavior-y: contain;
 }
 
 h1,
+span,
 p,
 h2,
 h3,
 h4,
 h5,
 img,
+a,
+i,
 h6 {
   user-select: none;
   user-zoom: none;
@@ -17,10 +22,12 @@ h6 {
   -webkit-user-select: none;
 }
 
+
 h1,
 p,
 h2,
 h3,
+span,
 h4,
 h5,
 h6{
@@ -55,7 +62,9 @@ h6{
 
 
 * {
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont,
+  "Segoe UI", system-ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+  "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -78,9 +87,4 @@ h6{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b3b2b2c5;
-}
-
-.mdc-card {
-  width: 500px;
-  height: 350px !important;
 }

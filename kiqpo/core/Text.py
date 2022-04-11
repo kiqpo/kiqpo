@@ -1,17 +1,34 @@
-def Text(Text="", classname="", Type="p", Style="", Id="0"):
-    """Return simple text render widget\n
-    Type specific text type like h1 , h2 etc.\n
+def Text(text, classname="", type="p", style="", Id="0"):
+    """Return simple text render wIdget\n
+    type specific text type like h1 , h2 etc.\n
     example -:
-    Text("Hello from Kiqpo", Type='H2',Style=TextStyle(Color='red'))
+    Text("Hello from Kiqpo", type='H2',style=Textstyle(Color='red'))
     """
-    if Style != "":
-        if classname != "":
-            return f"""<{Type} id={Id} class='{classname}' style='{Style}'>{Text}</{Type}>"""
-        else:
-            return f"""<{Type} id={Id} style='{Style}'>{Text}</{Type}>"""
 
-    else:
-        if classname != "":
-            return f"""<{Type} id={Id} class='{classname}'>{Text}</{Type}>"""
+    
+    try:
+        # this is a js State 
+        print(text['isState'])
+        if style != "":
+            if classname != "":
+                return f"""<{type} id={Id} class='{classname}' style='{style}'><script>document.write({text['state']})</script></{type}>"""
+            else:
+                return f"""<{type} id={Id} style='{style}'><script>document.write({text['state']})</script></{type}>"""
+
         else:
-            return f"""<{Type} id={Id}>{Text}</{Type}>"""
+            if classname != "":
+                return f"""<{type} id={Id} class='{classname}'><script>document.write({text['state']})</script></{type}>"""
+            else:
+                return f"""<{type} id={Id}><script>document.write({text['state']})</script></{type}>"""                       
+    except:
+        if style != "":
+            if classname != "":
+                return f"""<{type} id={Id} class='{classname}' style='{style}'>{text}</{type}>"""
+            else:
+                return f"""<{type} id={Id} style='{style}'>{text}</{type}>"""
+
+        else:
+            if classname != "":
+                return f"""<{type} id={Id} class='{classname}'>{text}</{type}>"""
+            else:
+                return f"""<{type} id={Id}>{text}</{type}>"""

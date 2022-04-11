@@ -10,26 +10,30 @@
     <meta name="author" content="shajin-sha" />
     <meta property="og:title" content="Kiqpo" />
     <meta property="og:url" content="www.hey.com" />
+    <link rel="manifest" href="/manifest.json" />
     <meta property="og:description" content="this is an image description" />
     <meta property="og:image" itemprop="image" content="#" />
     <meta property="og:type" content="Landing-page"/>
     <link rel="stylesheet" href="./css/material.min.css">
     <link href="./css/core.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/theme.css" />
-    <link rel="icon" href="./src/icon.ico" sizes="16x16" type="image/ico" />
+    <link rel="icon" href="./assets/icons/png/512x512.png" sizes="16x16" type="image/ico" />
       <title>Kiqpo</title>
+    <script>
+    
+  </script>
+  <script src="./js/startup.js"></script>
+  <script src="./js/material.min.js"></script>
 </head>
 
 <body>
     
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
+  <header style='background-color: #007AFF;' class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Kiqpo</span>
-      <!-- Add spacer, to align navigation to the right -->
+      <span class="mdl-layout-title">My app</span>
       <div class="mdl-layout-spacer"></div>
-      <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
@@ -39,7 +43,7 @@
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Kiqpo</span>
+    <span class="mdl-layout-title"></span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="">Link</a>
       <a class="mdl-navigation__link" href="">Link</a>
@@ -49,26 +53,24 @@
   </div>  
   <main class="mdl-layout__content">
     <div class="page-content">
-        <div><H2 id=0>Hello from Kiqpo</H2><div style='padding:1.5%;' ><button style='background: var(--primary);' id=0 class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-  <span class="mdc-button__ripple"></span>
-  <i class="material-icons mdc-button__icon" aria-hidden="true">file_download</i>
-  <span class="mdc-button__label">hello</span>
-</button></div></div>
+        <div style='margin-top: 10px;' ><div style='padding:1.5%;' ><button style='
+    background-color: #007AFF;
+    border-radius: 5px;
+    width:19%;
+    ' onclick='alert("hello")' class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id='0'><span class="mdc-button__label">blue button</span></button></div><div style='padding:1.5%;' ><button style='
+    background-color: #FF453A;
+    border-radius: 5px;
+    width:19%;
+    ' onclick='snackbarShow("MySnackbar","HI to python")' class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id='0'><span class="mdc-button__label">red button</span></button></div><div id="MySnackbar" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div></div>
     </div>
   </main>
 </div>
 </body>
-
-  <script src="./js/material.min.js"></script>
   <script src="./js/core.js"></script>
   <script src="./js/navigate.js"></script>
-  <script src="/eel.js"></script>
-
-  <script>
-    
-    eel.expose(say_hello_js)
-  </script>
-
     <script>
     
     

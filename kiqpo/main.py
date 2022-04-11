@@ -5,10 +5,25 @@ def RunApp():
     Head(),
     Body(
         KiqpoLayout(
-            TopAppBar(Title="Kiqpo"),
+            TopAppBar(title='My app', style=TopAppBarStyle(
+                background=Colors.blue
+            )),
             Home(
-                Text("Hello from Kiqpo", Type='H2'),
-                Padding(IconButton(icon=Icons.file_download, text='hello'))
+                Padding(
+                    Button(label='blue button', style=buttonstyle(
+                        borderRadius=Px(5),
+                        width=Screen(19),
+                        background=Colors.blue
+                    ), onTap=Alert("hello")),
+                ),
+                Padding(
+                    Button(label='red button', style=buttonstyle(
+                        borderRadius=Px(5),
+                        width=Screen(19),
+                        background=Colors.red
+                    ), onTap=Snackbar.show("MySnackbar",'HI to python')),
+                ),
+                Snackbar.initialize("MySnackbar"),
             ),
-        )
+        ),
     )

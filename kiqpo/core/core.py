@@ -26,7 +26,6 @@ def body(*data):
     # save same index.html to desktop native dir
 
     DesktopHTML = open('../kiqpo/desktop/native/index.html', 'w+')
-
     HtmlTagsList = [*data]
     HtmlTags = ""
     for ele in HtmlTagsList:
@@ -36,7 +35,7 @@ def body(*data):
     DesktopHTML.close()
 
 
-def head(title="Kiqpo", style="./style.css", css=True, themeColor="#3f51b5", siteUrl="www.hey.com", image_description="this is an image description", imageurl="#", Type="Landing-page", keywords="Bionic", description="Bionic is Python Framework for crafting beautiful, fast user experiences for web and is free and open source.", author="shajin-sha", icon="./src/icon.ico"):
+def head(title="Kiqpo", style="./style.css", css=True, themeColor="#3f51b5", siteUrl="www.hey.com", image_description="this is an image description", imageurl="#", Type="Landing-page", keywords="Bionic", description="Bionic is Python Framework for crafting beautiful, fast user experiences for web and is free and open source.", author="shajin-sha", icon="./assets/icons/png/512x512.png"):
     global HeadTag
     HeadTag = HeadCore(Title=title, Style=style,  Css=css, ThemeColor=themeColor, SiteUrl=siteUrl, Image_description=image_description,
                        Imageurl=imageurl, Type=Type, Keywords=keywords, Description=description, Author=author, Icon=icon)

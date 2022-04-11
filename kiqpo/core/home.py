@@ -3,4 +3,4 @@ def Home(*Tags):
     DivTags = ""
     for ele in HtmlTagsList:
         DivTags+=ele
-    return f"<div>{DivTags}</div>"
+    return f"<div style='margin-top: 10px;' >{DivTags}</div>"
