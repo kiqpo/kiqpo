@@ -15,7 +15,7 @@
 
 ### Quick start
 
-> ⚠️ Kiqpo is **Unsuitable for production** as of now.
+> ⚠️ Kiqpo is **too young for production** as of now.
 
 <sub>Try and contribute | pre-alpha</sub>
 
@@ -40,7 +40,7 @@ that's why we follow [google](https://github.com/google)'s [material design](htt
 
 ### Productive development
 
-Kiqpo offers hot reload, allowing you to make changes to your code and see the results instantly & No HTML/CSS/JavaScript required for Kiqpo
+Kiqpo offers hot reload, allowing you to make changes to your code and see the results instantly & No HTML/CSS/JavaScript is required for Kiqpo
 
 <img width='100%' src='https://i.postimg.cc/c1rXZYxL/output-onlinegiftools.gif' />
 
